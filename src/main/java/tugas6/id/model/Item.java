@@ -21,9 +21,9 @@ public class Item extends PanacheEntityBase {
     @Column(name = "name")
     public String name;
     @Column(name = "count")
-    public Integer count;
+    public String count;
     @Column(name = "price")
-    public Integer price;
+    public String price;
     @Column(name = "type")
     public String type;
     @Column(name = "description", columnDefinition = "text")

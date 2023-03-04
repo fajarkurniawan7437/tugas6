@@ -1,5 +1,4 @@
 package tugas6.id.controller;
-import tugas6.id.model.Item;
 import tugas6.id.service.ItemService;
 
 import javax.inject.Inject;
@@ -7,8 +6,6 @@ import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.time.LocalDateTime;
-import java.util.HashMap;
 import java.util.Map;
 
 

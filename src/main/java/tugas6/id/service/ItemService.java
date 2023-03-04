@@ -26,8 +26,8 @@ public class ItemService {
     public Response post(Map<String, Object> request){
         Item item = new Item();
         item.name = request.get("name").toString();
-        item.count = Integer.parseInt(request.get("count").toString());
-        item.price = Integer.parseInt(request.get("price").toString());
+        item.count = request.get("count").toString();
+        item.price = request.get("price").toString();
         item.type = request.get("type").toString();
         item.description = request.get("description").toString();
         item.createdAt = item.getCreatedAt();
@@ -44,8 +44,8 @@ public class ItemService {
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
         item.name = request.get("name").toString();
-        item.count = Integer.parseInt(request.get("count").toString());
-        item.price = Integer.parseInt(request.get("price").toString());
+        item.count = request.get("count").toString();
+        item.price = request.get("price").toString();
         item.type = request.get("type").toString();
         item.description = request.get("description").toString();
         item.createdAt = item.getCreatedAt();

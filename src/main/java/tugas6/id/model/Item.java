@@ -34,12 +34,4 @@ public class Item extends PanacheEntityBase {
     @UpdateTimestamp
     @Column(name = "updated_at")
     public LocalDateTime updatedAt;
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
 }

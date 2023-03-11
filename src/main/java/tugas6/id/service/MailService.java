@@ -17,7 +17,7 @@ public class MailService {
         mailer.send(
                 Mail.withHtml(email,
                         "CRUD API Quarkus Batch 6",
-                        "<h1>Hello,</h1> this is Quarkus Peserta-Service"));
+                        "<h1>Hello,</h1> this is Quarkus Item-Service"));
     }
 
     public void sendExcelToEmail(String email) throws IOException {
